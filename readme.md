@@ -1,35 +1,36 @@
-# INF99X: Sample Course
+﻿# AZ-900T00 和 AZ-900T01：Microsoft Azure 基礎知識
 
-- **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
-- **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository
+> **有一個[實驗室錄製和示範](https://github.com/MicrosoftLearning/Lab-Demo-Recordings)存放庫包含指向 Microsoft 官方課程中使用的實驗室視訊的連結。其目的是為 Microsoft 認證講師提供一種簡單的方式，讓他們能?存取該組合中使用的非音訊版本的實際操作實驗室錄製。**
 
-## What are we doing?
+- **[指向逐步解說的連結 (HTML 格式)](https://microsoftlearning.github.io/AZ-900T0xTW-MicrosoftAzureFundamentals/)**
+- **您是 MCT 嗎？** - 請查看我們的[適用於 MCT 的 GitHub 使用者指南](https://microsoftlearning.github.io/MCT-User-Guide/)
 
-- To support this course, we will need to make frequent updates to the course content to keep it current with the Azure services used in the course.  We are publishing the lab instructions and lab files on GitHub to allow for open contributions between the course authors and MCTs to keep the content current with changes in the Azure platform.
+## 我們在幹什麼？
 
-- We hope that this brings a sense of collaboration to the labs like we've never had before - when Azure changes and you find it first during a live delivery, go ahead and make an enhancement right in the lab source.  Help your fellow MCTs.
+- 為了支援這些課程，我們需要經常更新課程內容，使其與課程中使用的 Azure 服務保持同步。  我們正在 GitHub 上發佈實驗室說明，以允許課程作者和 MCT 之間的開放貢獻，從而使內容與 Azure 平台中的變更保持同步。
 
-## How should I use these files relative to the released MOC files?
+- 我們希望這能給實驗室帶來前所未有的共同作業感 - 當 Azure 發生變更，而您在實?授課中第一次發現它時，請繼續在實驗室原始程式碼中進行改進。  協助您的 MCT 同事。
 
-- The instructor handbook and PowerPoints are still going to be your primary source for teaching the course content.
+## 相對於發佈的 MOC 檔案，我應該如何使用這些檔案？
 
-- These files on GitHub are designed to be used in conjunction with the student handbook, but are in GitHub as a central repository so MCTs and course authors can have a shared source for the latest lab files.
+- 講師手?和 PowerPoints 仍然是您講授課程內容的主要來源。
 
-- It will be recommended that for every delivery, trainers check GitHub for any changes that may have been made to support the latest Azure services, and get the latest files for their delivery.
+- GitHub 上的這些檔案設計為與學生手冊結合使用，但 GitHub 中的這些檔案是作為一個中央存放庫，這樣 MCT 和課程作者就可以共用最新實驗室檔案來源。
 
-## What about changes to the student handbook?
+- 建議講師在每次授課時檢查 GitHub 是否有變更，以支援最新的 Azure 服務，並獲取最新檔案進行授課。
 
-- We will review the student handbook on a quarterly basis and update through the normal MOC release channels as needed.
+## 學生手冊的變更如何處理？
 
-## How do I contribute?
+- 我們將每季度檢閱一次學生手冊，並根據需要透過正常的 MOC 發佈通道進行更新。
 
-- Any MCT can submit a pull request to the code or content in the GitHub repro, Microsoft and the course author will triage and include content and lab code changes as needed.
+## 我如何貢獻？
 
-- You can submit bugs, changes, improvement and ideas.  Find a new Azure feature before we have?  Submit a new demo!
+- 任何 MCT 都可以向 GitHub 存放庫中的程式碼或內容提交提取請求，Microsoft 和課程作者將根據需要分類並包括內容和實驗室程式碼變更。
 
-## Notes
+- 您可以提交 bug、變更、改進和想法。  在我們擁有之前找到新 Azure 功能？  提交一個新示範！
 
-### Classroom Materials
+## 附註
 
-It is strongly recommended that MCTs and Partners access these materials and in turn, provide them separately to students.  Pointing students directly to GitHub to access Lab steps as part of an ongoing class will require them to access yet another UI as part of the course, contributing to a confusing experience for the student. An explanation to the student regarding why they are receiving separate Lab instructions can highlight the nature of an always-changing cloud-based interface and platform. Microsoft Learning support for accessing files on GitHub and support for navigation of the GitHub site is limited to MCTs teaching this course only.
+### 課堂教材
+
+強烈建議 MCT 和合作夥伴存取這些教材，然後分別提供給學生。  將學生直接指向 GitHub 以作為正在進行的課程的一部分存取實驗室步驟將要求他們作為課程的一部分存取另一個 UI，這會給學生帶來混亂的體驗。向學生解釋為什麼他們會收到單獨的實驗室說明，可以醒目提示雲端式介面和平台的不斷變化的本質。Microsoft 學習對存取 GitHub 上的檔案的支援以及對 GitHub 網站導覽的支援僅限於教授本課程的 MCT。

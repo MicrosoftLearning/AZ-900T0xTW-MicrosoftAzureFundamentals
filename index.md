@@ -1,25 +1,18 @@
----
-title: Online Hosted Instructions
+﻿---
+title: 線上託管說明
 permalink: index.html
 layout: home
 ---
 
-# Content Directory
+# 內容目錄
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+指向每個逐步解說的超連結。講師可以選擇將逐步解說用作示範或學生實驗室。 
 
-## Labs
+## 逐步解說
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
+{% assign wts = site.pages | where_exp:"page", "page.url contains '/Instructions/Walkthroughs'" %}
+| 模組 | 逐步解說 |
 | --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
+{% for activity in wts %}| {{ activity.wts.module }} | [{{ activity.wts.title }}{% if activity.wts.type %} - {{ activity.wts.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
 {% endfor %}
 
-## Demos
-
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
