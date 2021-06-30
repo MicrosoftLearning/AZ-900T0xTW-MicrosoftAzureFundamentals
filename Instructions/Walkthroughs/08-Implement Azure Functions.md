@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '08 - 實作 Azure Functions (5 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'

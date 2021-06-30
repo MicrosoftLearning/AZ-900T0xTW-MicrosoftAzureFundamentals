@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '12 - 實作 Azure Key Vault (5 分鐘)'
     module: '模組 04：描述一般安全性和網路安全性功能'
