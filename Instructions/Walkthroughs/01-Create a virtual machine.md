@@ -13,7 +13,7 @@ wts:
 
 在這個工作中，我們將建立一個 Windows Server 2019 資料中心 - Gen1 虛擬機器。 
 
-1. 登入到 [Azure 入口網站 (https://portal.azure.com)](https://portal.azure.com?azure-portal=true)。
+1. 登入到 Azure 入口網站 [(https://portal.azure.com)](https://portal.azure.com?azure-portal=true)。
 
 2. 從 [**所有服務**] 刀鋒視窗，搜尋並選取 [**虛擬機器**]，然後按一下 [**+ 新增**] 並選擇 [**+ 虛擬機器**]。
 
@@ -76,7 +76,7 @@ wts:
 
     ![[連線] 按鈕醒目提示的虛擬機器屬性的螢幕擷取畫面。 ](../images/0102.png)
 
-4. 在 [**Windows 安全性**] 視窗中，選取 [**更多選擇**]，然後選取 [**使用其他帳戶**]。提供使用者名稱 (.\azureuser) 和密碼 (Pa$$w0rd1234)。按一下 [**確定**] 進行連線。
+4. 在 [**Windows 安全性**] 視窗中，選取 [**更多選擇**]，然後選取 [**使用其他帳戶**]。提供使用者名稱 (.\azureuser) 和密碼 (Pa$$w0rd1234)。 按一下 [**確定**] 進行連線。
 
     ![[Windows 安全性] 對話方塊的螢幕擷取畫面，其中選取了 [使用其他帳戶]、使用者名稱 azureuser 並輸入了密碼。](../images/0103.png)
 
