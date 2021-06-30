@@ -1,4 +1,4 @@
-﻿---
+---
 wts:
     title: '06 - 建立 SQL Database (5 分鐘)'
     module: '模組 02 - 核心 Azure 服務 (工作負載)'
