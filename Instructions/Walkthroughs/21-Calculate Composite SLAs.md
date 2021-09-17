@@ -1,9 +1,9 @@
----
+﻿---
 wts:
     title: '21 - 計算複合 SLA (5 分鐘)'
     module: '模組 06：描述 Azure 成本管理和服務等級協定'
 ---
-# 21 - 計算複合 SLA
+# 21 - 計算複合 SLA (5 分鐘)
 
 在這個逐步解說中，我們將確定 Azure 服務的可用性 SLA，然後計算基於應用程式復合 SLA 的預期可用性。
 
@@ -14,7 +14,7 @@ wts:
 + **應用程式閘道**：管理應用程式存取和擴展。 
 + **Azure SQL Database**：儲存應用程式資料。 
 
-# 工作 1：確定應用程式的 SLA 執行時間百分比值 (5 分鐘)
+# 工作 1：確定我們應用程式的 SLA 執行時間百分比值
 
 1. 在瀏覽器中，前往 [Azure 服務的 SLA 摘要](https://azure.microsoft.com/zh-tw/support/legal/sla/summary/)頁面。
 
