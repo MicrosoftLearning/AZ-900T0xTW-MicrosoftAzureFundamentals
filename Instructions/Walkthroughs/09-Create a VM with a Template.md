@@ -11,7 +11,7 @@ wts:
 
 在這個工作中，我們將使用 Azure 快速入門圖庫部署建立虛擬機器的範本。 
 
-1. 在實驗室環境中，開啟一個新的瀏覽器視窗，然後輸入 https://azure.microsoft.com/en-us/resources/templates/?azure-portal=true。在該圖庫中，您會找到一些流行的和最近更新的範本。這些範本自動部署 Azure 資源，包括安裝流行的軟體套件。瀏覽許多不同類型的可用範本。
+1. 在實驗室環境中，開啟一個新的瀏覽器視窗，然後輸入 https://azure.microsoft.com/zh-tw/resources/templates/?azure-portal=true 。在該圖庫中，您會找到一些流行的和最近更新的範本。這些範本自動部署 Azure 資源，包括安裝流行的軟體套件。瀏覽許多不同類型的可用範本。
 
 3. 選取 [**部署一個簡單的 Windows VM**]。
 
