@@ -3,29 +3,33 @@ wts:
     title: '11 - 使用 CLI 建立 VM (10 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'
 ---
-# 11 - 使用 CLI 建立 VM
+# 11 - 使用 CLI 建立 VM (10 分鐘)
 
 在這個逐步解說中，我們將設定 Cloud Shell，使用 Azure CLI 建立資源群組和虛擬機器，並檢閱 Azure Advisor 建議。 
 
-# 工作 1：設定 Cloud Shell (10 分鐘)
+# 工作 1：設定 Cloud Shell 
 
-在這個工作中，我們將設定 Cloud Shell。 
+在這個工作中，我們將設定 Cloud Shell，並使用 Azure CLI 建立一個資源群組和一個虛擬機器。  
 
 1. 登入到 [Azure 入口網站](https://portal.azure.com)。
 
 2. 從 Azure 入口網站中，按一下 Azure 入口網站右上角的圖示，開啟 **Azure Cloud Shell**。
 
     ![Azure 入口網站 Azure Cloud Shell 圖示的螢幕擷取畫面。](../images/1002.png)
+   
+3. 在 [歡迎使用 Azure Cloud Shell] 對話方塊中，在出現提示時，選取 **Bash** 或 **PowerShell**，然後選取 **Bash**。 
 
-3. 如果您以前使用過 Cloud Shell，請繼續執行下一個工作。 
+4. 將開啟一個新視窗，顯示 [**您沒有掛接儲存體**]。選取 [**進階設定**]。
 
-4. 當系統提示您選取 **Bash** 或 **PowerShell** 時，選取 **Bash**。 
+5. 在 [進階設定] 荧幕中，填寫以下欄位，然後按一下 [建立儲存體]：
+    - 資源群組：**建立新資源群組**
+    - 儲存體帳戶：建立新帳戶並使用全域唯一名稱 (例如：cloudshellstoragemystorage)
+    - 檔案共用：建立一個新共用，並將其命名為 cloudshellfileshare
 
-5. 當系統提示時，按一下 [**建立儲存體**]，並等候 Azure Cloud Shell 進行初始化。 
 
-# 工作 2：建立資源群組和虛擬機器
+# 工作 2：使用 CLI 建立一個虛擬機器
 
-在這個工作中，我們將使用 Azure CLI 建立一個資源群組和一個虛擬機器。  
+在這個工作中，我們將使用 Azure CLI 建立一個資源群組和一個虛擬機器。
 
 1. 確保在 Cloud Shell 窗格的左上角下拉式功能表中選取 **Bash** (如果沒有，請選取)。
 
@@ -43,20 +47,20 @@ wts:
     az group list --output table
     ```
 
-4. 建立新的虛擬機器。確保除最後一行之外的每一行後面都有反斜線 (`\`) 字元。如果在同一行鍵入整個命令，請不要使用任何反斜線字元。 
+4. 在 Cloud Shell 中，輸入下列命令，並確保除最後一行之外的每一行後面都有反斜線 (\) 字元。如果在同一行鍵入整個命令，請不要使用任何反斜線字元。 
 
     ```cli
     az vm create \
     --name myVMCLI \
     --resource-group myRGCLI \
     --image UbuntuLTS \
-    --location EastUS \
+    --location EastUS2 \
     --admin-username azureuser \
     --admin-password Pa$$w0rd1234
     ```
 
     >**注意**：如果在 Windows 電腦上使用命令列，請將反斜線 (`\`) 字元替換為插入符號 (`^`)。
-    
+
     **注意**：該命令需要 2 到 3 分鐘才能完成。該命令將建立虛擬機器和與其關聯的各種資源，例如儲存體、網路和安性全資源。在虛擬機器部署完成之前，不要繼續執行下一步。 
 
 5. 命令執行完成後，請在流覽器視窗中關閉 Cloud Shell 窗格。

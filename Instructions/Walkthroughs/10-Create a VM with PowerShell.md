@@ -3,11 +3,11 @@ wts:
     title: '10 - 使用 PowerShell 建立 VM (10 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'
 ---
-# 10 - 使用 PowerShell 建立 VM
+# 10 - 使用 PowerShell 建立 VM (10 分鐘)
 
 在這個逐步解說中，我們將設定 Cloud Shell，使用 Azure PowerShell 模組建立資源群組和虛擬機器，並檢閱 Azure Advisor 建議。 
 
-# 工作 1：設定 Cloud Shell (10 分鐘)
+# 工作 1：設定 Cloud Shell 
 
 在這個工作中，我們將設定 Cloud Shell。 
 
@@ -17,11 +17,17 @@ wts:
 
     ![Azure 入口網站 Azure Cloud Shell 圖示的螢幕擷取畫面。](../images/1002.png)
 
-3. 如果您以前使用過 Cloud Shell，請繼續執行下一個工作。 
+3. 當系統提示您選取 **Bash** 或 **PowerShell** 時，選取 **PowerShell**。
 
-4. 當系統提示您選取 **Bash** 或 **PowerShell** 時，選取 **PowerShell**。
+4. 在 [**您沒有掛接儲存體**] 荧幕上，選取 [**顯示進階設定**]，然後填充下面的資訊
 
-5. 當系統提示時，按一下 [**建立儲存體**]，並等候 Azure Cloud Shell 進行初始化。 
+    | 設定 | 值 |
+    |  -- | -- |
+    | 資源群組 | **建立新資源群組** |
+    | 儲存體帳戶 (建立新帳戶並使用全域唯一名稱 (例如：cloudshellstoragemystorage)) | **cloudshellxxxxxxx** |
+    | 檔案共用 (新增) | **shellstorage** |
+
+5. 選取 [**建立儲存體**]
 
 # 工作 2：建立資源群組和虛擬機器
 
@@ -29,19 +35,13 @@ wts:
 
 1. 確保在 Cloud Shell 窗格的左上角下拉式功能表中選取了 **PowerShell**。
 
-2. 在 Cloud Shell 窗格的 PowerShell 工作階段中，建立新資源群組。 
-
-    ```PowerShell
-    New-AzResourceGroup -Name myRGPS -Location EastUS
-    ```
-
-3. 驗證您的新資源群組。 
+2. 透過在 Powershell 視窗中執行以下命令來驗證您的新資源群組。按一下 **Enter** 以執行命令。
 
     ```PowerShell
     Get-AzResourceGroup | Format-Table
     ```
 
-4. 建立一個虛擬機器。出現提示時，請提供使用者名稱 (**azureuser**) 和密碼 (**Pa$$w0rd1234**)，它們將設定為該虛擬機器上的本地管理員帳戶。確保在每行末尾都包含刻度 (`) 字元，但最後一行除外 (如果在單行上鍵入整個命令，則不應包含任何刻度字元)。
+3. 透過將下列命令貼上到終端視窗中來建立虛擬機器。 
 
     ```PowerShell
     New-AzVm `
@@ -53,9 +53,10 @@ wts:
     -SecurityGroupName "myNSGPS" `
     -PublicIpAddressName "myPublicIpPS"
     ```
-** 等待 VM 部署，然後關閉 PowerShell
+    
+4. 出現提示時，請提供使用者名稱 (**azureuser**) 和密碼 (**Pa$$w0rd1234**)，它們將設定為該虛擬機器 azureadmin 上的本地管理員帳戶。
 
-5. 關閉 PowerShell 工作階段 Cloud Shell 窗格。
+5. 建立 VM 後，關閉 PowerShell 工作階段 Cloud Shell 窗格。
 
 6. 在 Azure 入口網站中，搜尋 [**虛擬機器**]，並驗證 **myVMPS** 正在執行。這可能會需要幾分鐘。
 
@@ -77,13 +78,14 @@ wts:
     Get-AzVM -name myVMPS -status | Format-Table -autosize
     ```
 
-4. 停止虛擬機器。出現提示時，確認 (是) 動作。 
+4. 使用下列命令停止虛擬機器。 
 
     ```PowerShell
     Stop-AzVM -ResourceGroupName myRGPS -Name myVMPS
     ```
+5. 出現提示時，確認 (是) 動作。等待**成功**狀態。
 
-5. 驗證您的虛擬機器狀態。PowerState 現在應該是 [**已解除配置**]。您還可以驗證入口網站中的虛擬機器狀態。 
+6. 驗證您的虛擬機器狀態。PowerState 現在應該是 [**已解除配置**]。您還可以驗證入口網站中的虛擬機器狀態。關閉 Cloudshell。
 
     ```PowerShell
     Get-AzVM -name myVMPS -status | Format-Table -autosize
