@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '10 - 使用 PowerShell 建立 VM (10 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'
@@ -11,8 +11,7 @@ wts:
 
 在這個工作中，我們將設定 Cloud Shell。 
 
-1. 登入到 [Azure 入口網站](https://portal.azure.com)。
-
+1. 登入到 [Azure 入口網站](https://portal.azure.com)。 **您可以在 [資源] 索引標籤中找到您的登入憑據 (緊鄰 [說明] 索引標籤！)**
 2. 從 Azure 入口網站中，按一下 Azure 入口網站右上角的圖示，開啟 **Azure Cloud Shell**。
 
     ![Azure 入口網站 Azure Cloud Shell 圖示的螢幕擷取畫面。](../images/1002.png)

@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '11 - 使用 CLI 建立 VM (10 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'
@@ -23,7 +23,7 @@ wts:
 
 5. 在 [進階設定] 荧幕中，填寫以下欄位，然後按一下 [建立儲存體]：
     - 資源群組：**建立新資源群組**
-    - 儲存體帳戶：建立新帳戶並使用全域唯一名稱 (例如：cloudshellstoragemystorage)
+    - 儲存體帳戶：建立新帳戶並使用全域唯一名稱 (例如：cloudshellxyzstorage)
     - 檔案共用：建立一個新共用，並將其命名為 cloudshellfileshare
 
 
@@ -35,13 +35,8 @@ wts:
 
     ![醒目提示 Bash 下拉式清單的 Azure 入口網站 Azure Cloud Shell 的螢幕擷取畫面。](../images/1002a.png)
 
-2. 在 Cloud Shell 窗格的 Bash 工作階段中，建立新資源群組。 
 
-    ```cli
-    az group create --name myRGCLI --location EastUS
-    ```
-
-3. 驗證資源群組是否已建立。
+2. 透過輸入以下命令驗證您正在使用的資源群組。
 
     ```cli
     az group list --output table
