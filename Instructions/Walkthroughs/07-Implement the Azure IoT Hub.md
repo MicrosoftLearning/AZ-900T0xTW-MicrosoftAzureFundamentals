@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '07 - 實作 Azure IoT 中樞 (10 分鐘)'
     module: '模組 03：描述核心解決方案和管理工具'
@@ -58,7 +58,7 @@ wts:
 
 在這個工作中，我們將使用 Raspberry Pi 模擬器測試我們的裝置。 
 
-1. 開啟 Web 瀏覽器中的新索引標籤，並輸入此捷徑連結 https://aka.ms/RaspPi。它將帶您去一個 Raspberry Pi 模擬器網站。如果您有時間，請閱讀關於 Raspberry Pi 模擬器的文章。完成後，選取**X**關閉快顯視窗。
+1. 開啟 Web 瀏覽器中的新索引標籤，並輸入此捷徑連結 https://aka.ms/RaspPi 。它將帶您去一個 Raspberry Pi 模擬器網站。如果您有時間，請閱讀關於 Raspberry Pi 模擬器的文章。完成後，選取**X**關閉快顯視窗。
 
 2. 在程式碼區域的右側，找到含有「const connectionString =」的行。將其替換為從 Azure 入口網站複製的連線字串。注意，連線字串包含 DeviceId (**myRaspberryPi**) 和 SharedAccessKey 項目。
 
