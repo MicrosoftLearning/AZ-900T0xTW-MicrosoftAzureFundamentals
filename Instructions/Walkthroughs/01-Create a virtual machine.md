@@ -1,4 +1,4 @@
----
+﻿---
 wts:
     title: '01 – 在入口網站中建立虛擬機器 (10 分鐘)'
     module: '模組 02 - 核心 Azure 服務 (工作負載)'
@@ -80,7 +80,7 @@ wts:
 
     ![虛擬機器桌面的螢幕擷取畫面，其中按一下 [開啟] 按鈕並選取 PowerShell 然後醒目提示 [以系統管理員身分執行]。](../images/0105.png)
 
-2. 在 PowerShell 中执行以下命令，在虛擬機器中安裝 **Web 伺服器**功能。 
+2. 在 PowerShell 中，透?執行下列命令，在虛擬機器中安裝 **Web 伺服器**功能。(在命令中貼上並按 ENTER 開始安裝)。
 
     ```PowerShell
     Install-WindowsFeature -name Web-Server -IncludeManagementTools
