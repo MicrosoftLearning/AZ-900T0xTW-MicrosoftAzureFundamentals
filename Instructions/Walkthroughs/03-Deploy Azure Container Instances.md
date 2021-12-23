@@ -26,7 +26,7 @@ wts:
 	| 區域 | **美國東部** |
 	| 映像來源| **Docker 中樞或其他登錄**|
 	| 映像類型| **公用**|
-	| 映像| **microsoft/aci-helloworld**|
+	| 映像| **mcr.microsoft.com/azuredocs/aci-helloworld**|
 	| OS 類型| **Linux** |
 	| 大小| ***保留預設值***|
 
