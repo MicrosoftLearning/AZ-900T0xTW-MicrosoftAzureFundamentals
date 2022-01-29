@@ -1,4 +1,13 @@
-﻿# AZ-900T00 和 AZ-900T01：Microsoft Azure 基礎知識
+**Important Notice!**
+
+This repo was replaced by a [new repo](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals.zh-tw) on 21 January 2022. We're making this change to improve the localized version of this content and reduce the delta between English and localized content updates. 
+After a short interval, this repo will be archived.
+
+**Contributions**
+
+At this time, we are not accepting external contributions to this repo. If you have suggestions or spot any errors, please create a pull request or report an issue on the [new repo](https://github.com/MicrosoftLearning/AZ-900T0x-MicrosoftAzureFundamentals.zh-tw).
+
+# AZ-900T00 和 AZ-900T01：Microsoft Azure 基礎知識
 
 - **[指向逐步解說的連結 (HTML 格式)](https://microsoftlearning.github.io/AZ-900T0xTW-MicrosoftAzureFundamentals/)**
 - **您是 MCT 嗎？** - 請查看我們的[適用於 MCT 的 GitHub 使用者指南](https://microsoftlearning.github.io/MCT-User-Guide/)
